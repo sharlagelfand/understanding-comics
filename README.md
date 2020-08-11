@@ -5,4 +5,5 @@ Comics”](http://www.scottmccloud.com/2-print/1-uc/):
 
 <img src="comic_small.png" width="1200" />
 
-See in full resolution [here]().
+See in full resolution
+[here](https://github.com/sharlagelfand/understanding-comics/blob/main/comic.png).

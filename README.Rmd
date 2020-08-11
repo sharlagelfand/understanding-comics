@@ -8,4 +8,4 @@ A visualization made entirely in R, exploring types of comic transitions as desc
 knitr::include_graphics("comic_small.png")
 ```
 
-See in full resolution [here]().
+See in full resolution [here](https://github.com/sharlagelfand/understanding-comics/blob/main/comic.png).
