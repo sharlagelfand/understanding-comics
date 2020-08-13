@@ -173,6 +173,7 @@ ggsave("plots/fantastic_four_viz.png", fantastic_four_viz_panel, width = width *
 # American, European ----
 
 # Only use 6 from each category, easier plotting
+set.seed(1234)
 
 sample_comics <- comic_transitions_long %>%
   filter(category != "Fantastic Four") %>%
