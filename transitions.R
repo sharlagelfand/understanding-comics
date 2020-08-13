@@ -97,8 +97,8 @@ categories <- tribble(
   2, "action-to-action",
   3, "subject-to-subject",
   4, "scene-to-scene",
-  5, "apect-to-aspect",
-  6, "non-sequiter"
+  5, "aspect-to-aspect",
+  6, "non-sequitur"
 ) %>%
   mutate(
     text = str_replace_all(text, "-", "-\n"),
@@ -239,7 +239,7 @@ type_6 <- tibble(
 ) %>%
   plot_explanations()
 
-transitions_explained <- types_24 + labs(caption = "2-4 show things \nhappening in\nconcise ways.") + type_1 + labs(caption = "type 1 shows \nactions, like type 2,\nbut requires\nmore panels.") + type_5 + labs(caption = "in the 5th type,\nnothing happens.") + type_6 + labs(caption = "type 6 transitions,\nnon-sequiters, are\n unconcerned with\nevents or narrative.") + plot_layout(nrow = 1) +
+transitions_explained <- types_24 + labs(caption = "2-4 show things \nhappening in\nconcise ways.") + type_1 + labs(caption = "type 1 shows \nactions, like type 2,\nbut requires\nmore panels.") + type_5 + labs(caption = "in the 5th type,\nnothing happens.") + type_6 + labs(caption = "type 6 transitions,\nnon-sequiturs, are\n unconcerned with\nevents or narrative.") + plot_layout(nrow = 1) +
   plot_annotation(title = "The predominance of types 2-4 makes sense<br>if we see stories as connected series of events.", theme = theme(plot.title = element_markdown(family = comic_font, hjust = 0.5, size = font_size_viz, margin = margin(0, 0, -10, 0))))
 
 ggsave("plots/transitions_explained.png", transitions_explained, width = width * 2.05, height = height)
